@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - include:
+      file: /db/changelog/changes/grant-permission-to-cartoon-character-seq.sql
+  - include:
+      file: /db/changelog/changes/create-cartoon-character-seq.sql
+  - include:
+      file: /db/changelog/changes/create-cartoon-character-table.sql
+  - include:
+      file: /db/changelog/changes/add-external-id-column-to-cartoon-character-table.sql
