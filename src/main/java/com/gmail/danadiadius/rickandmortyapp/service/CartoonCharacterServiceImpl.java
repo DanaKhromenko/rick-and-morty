@@ -62,7 +62,7 @@ public class CartoonCharacterServiceImpl implements CartoonCharacterService {
     private void saveDtosToDB(ApiResponseDto apiResponseDto) {
         // Read all cartoon characters from PostgreSQL DB, whose external IDs are in response.
         Map<Long, ApiCharacterDto> externalDtos = Arrays.stream(apiResponseDto.getResults())
-                .collect(Collectors.toMap(ApiCharacterDto::getId, Function.identity()));
+                .collect(Collectors.toMap(dto -> dto.getId(), Function.identity()));
         Set<Long> externalIds = externalDtos.keySet();
 
         List<CartoonCharacter> cartoonCharactersFromDB = cartoonCharacterRepository
