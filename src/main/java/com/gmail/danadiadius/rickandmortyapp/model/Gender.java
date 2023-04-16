@@ -1,5 +1,8 @@
 package com.gmail.danadiadius.rickandmortyapp.model;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public enum Gender {
     FEMALE("Female"),
     MALE("Male"),
@@ -7,8 +10,4 @@ public enum Gender {
     UNKNOWN("unknown");
 
     private String value;
-
-    Gender(String value) {
-        this.value = value;
-    }
 }
