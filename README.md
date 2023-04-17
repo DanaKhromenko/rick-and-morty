@@ -2,6 +2,8 @@
 
 
 ### Description
+The service synchronizes daily with a third-party API, reading data about characters from the Rick and Morty universe into PostgreSQL. The service's users can obtain information about all characters by searching for their name, as well as data about a random character using the provided endpoints.
+
 On a regular basis, every day at 11:00, a web application loads data from a public API, https://rickandmortyapi.com/, 
 into an internal database. The implemented API queries data from the local database. Endpoint http://localhost:8080/cartoon-characters/random returns information about a random character 
 from the Rick and Morty universe. Endpoint http://localhost:8080/cartoon-characters/by-name takes a string argument 
